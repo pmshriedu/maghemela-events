@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
+import { revalidatePath } from "next/cache";
 
 export async function GET() {
   try {
@@ -61,6 +62,10 @@ export async function POST(request: NextRequest) {
         updatedAt: new Date(),
       },
     });
+
+    // Revalidate home page and events page to show new event
+    revalidatePath("/");
+    revalidatePath("/events");
 
     return NextResponse.json(event, { status: 201 });
   } catch (error) {

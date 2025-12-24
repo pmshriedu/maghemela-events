@@ -6,10 +6,20 @@ import { format } from "date-fns"
 import Link from "next/link"
 
 export async function NewsPreview() {
-  const news = await prisma.news.findMany({
-    take: 3,
-    orderBy: { createdAt: "desc" },
-  })
+  let news = [];
+  try {
+    news = await prisma.news.findMany({
+      take: 3,
+      orderBy: { createdAt: "desc" },
+    });
+  } catch (error) {
+    console.error("Failed to fetch news:", error);
+    // Return empty array, so the section renders but without news
+  }
+
+  if (news.length === 0) {
+    return null; // Or return a message, but for now, hide the section
+  }
 
   return (
     <section className="py-20 bg-background">

@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
+import { revalidatePath } from "next/cache";
 
 export async function GET() {
   try {
@@ -51,6 +52,9 @@ export async function PUT(request: NextRequest) {
       },
     });
 
+    // Revalidate home page to show/hide approved reviews
+    revalidatePath("/");
+
     return NextResponse.json(review);
   } catch (error) {
     console.error("Error updating review:", error);
@@ -78,6 +82,9 @@ export async function DELETE(request: NextRequest) {
     await prisma.review.delete({
       where: { id },
     });
+
+    // Revalidate home page to remove deleted review
+    revalidatePath("/");
 
     return NextResponse.json({ success: true });
   } catch (error) {

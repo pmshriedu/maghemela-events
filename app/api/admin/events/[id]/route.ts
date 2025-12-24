@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
+import { revalidatePath } from "next/cache";
 
 export async function PUT(
   request: NextRequest,
@@ -40,6 +41,10 @@ export async function PUT(
       },
     });
 
+    // Revalidate home page and events page to show updated event
+    revalidatePath("/");
+    revalidatePath("/events");
+
     return NextResponse.json(event);
   } catch (error) {
     console.error("Error updating event:", error);
@@ -69,6 +74,10 @@ export async function DELETE(
     await prisma.event.delete({
       where: { id: resolvedParams.id },
     });
+
+    // Revalidate home page and events page to remove deleted event
+    revalidatePath("/");
+    revalidatePath("/events");
 
     return NextResponse.json({ success: true });
   } catch (error) {

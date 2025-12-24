@@ -2,6 +2,7 @@ import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import { NextResponse } from "next/server";
+import { revalidatePath } from "next/cache";
 
 export async function POST(request: Request) {
   const session = await getServerSession(authOptions);
@@ -21,6 +22,10 @@ export async function POST(request: Request) {
         updatedAt: new Date(),
       },
     });
+
+    // Revalidate home page and news page to show new news
+    revalidatePath("/");
+    revalidatePath("/news");
 
     return NextResponse.json(news);
   } catch (error) {
