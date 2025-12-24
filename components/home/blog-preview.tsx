@@ -7,10 +7,20 @@ import Link from "next/link";
 import Image from "next/image";
 
 export async function BlogPreview() {
-  const blogs = await prisma.blog.findMany({
-    take: 3,
-    orderBy: { createdAt: "desc" },
-  });
+  let blogs = [];
+  try {
+    blogs = await prisma.blog.findMany({
+      take: 3,
+      orderBy: { createdAt: "desc" },
+    });
+  } catch (error) {
+    console.error("Failed to fetch blogs:", error);
+    // Return empty array, so the section renders but without blogs
+  }
+
+  if (blogs.length === 0) {
+    return null; // Or return a message, but for now, hide the section
+  }
 
   return (
     <section className="py-20 bg-muted/30">

@@ -120,16 +120,6 @@ export const metadata: Metadata = {
   generator: "Next.js 14",
   applicationName: "Maghey Sankranti Mela 2026",
   referrer: "origin-when-cross-origin",
-  colorScheme: "light dark",
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f59e0b" },
-    { media: "(prefers-color-scheme: dark)", color: "#d97706" },
-  ],
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-  },
   icons: {
     icon: [
       {
@@ -147,6 +137,17 @@ export const metadata: Metadata = {
     ],
     apple: "/favicons/apple-touch-icon.png",
   },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  colorScheme: "light dark",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f59e0b" },
+    { media: "(prefers-color-scheme: dark)", color: "#d97706" },
+  ],
 };
 
 export default function RootLayout({
