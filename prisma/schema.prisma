@@ -1,0 +1,81 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Blog {
+  id         String   @id
+  title      String
+  slug       String   @unique
+  content    String
+  coverImage String?
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime
+}
+
+model News {
+  id        String    @id
+  title     String
+  content   String
+  eventDate DateTime?
+  createdAt DateTime  @default(now())
+  updatedAt DateTime
+}
+
+model User {
+  id        String   @id
+  email     String   @unique
+  password  String
+  role      Role     @default(ADMIN)
+  createdAt DateTime @default(now())
+}
+
+model Event {
+  id          String   @id
+  title       String
+  image       String?
+  description String
+  time        String
+  date        DateTime
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Review {
+  id        String   @id
+  name      String?
+  star      Int      @db.SmallInt
+  email     String
+  phone     String
+  message   String
+  approved  Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Visitor {
+  id               String   @id
+  name             String?
+  email            String?
+  location         String?
+  city             String?
+  purpose          String?
+  source           String?
+  isAnonymous      Boolean  @default(false)
+  userAgent        String?
+  referrer         String?
+  screenResolution String?
+  timezone         String?
+  language         String?
+  ipAddress        String?
+  timestamp        DateTime @default(now())
+  createdAt        DateTime @default(now())
+  phone            String
+}
+
+enum Role {
+  ADMIN
+}
