@@ -1,11 +1,13 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { Play, Pause, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { musicManager } from "@/lib/music-manager";
 
 const FloatingMusicPlayer: React.FC = () => {
+  const pathname = usePathname();
   const [isPlaying, setIsPlaying] = useState(musicManager.getIsPlaying());
 
   useEffect(() => {
@@ -27,6 +29,11 @@ const FloatingMusicPlayer: React.FC = () => {
   const handleDownload = () => {
     musicManager.downloadMusic();
   };
+
+  // Hide only on admin pages
+  if (pathname.startsWith("/admin")) {
+    return null;
+  }
 
   return (
     <div className="fixed bottom-20 sm:bottom-8 left-4 z-50 flex items-center gap-1 sm:gap-2 bg-gradient-to-br from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 rounded-full px-2 sm:px-3 py-1 sm:py-2 shadow-lg hover:shadow-xl transition-all duration-300">
