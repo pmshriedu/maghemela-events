@@ -74,7 +74,7 @@ export function MobileNav() {
             initial={{ opacity: 0, y: 20, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
-            className="fixed bottom-20 left-4 right-4 bg-background/95 backdrop-blur-xl border border-border/60 rounded-2xl shadow-2xl z-50 md:hidden"
+            className="fixed bottom-20 left-4 right-4 bg-background/95 backdrop-blur-xl border border-border/60 rounded-2xl shadow-2xl z-60 md:hidden"
           >
             <div className="p-4">
               <div className="flex items-center justify-between mb-4">
