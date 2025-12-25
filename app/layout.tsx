@@ -13,6 +13,7 @@ import { SessionProviderWrapper } from "@/components/providers/session-provider"
 import { VisitorProvider } from "@/components/providers/visitor-provider";
 import { VisitorTrackingWrapper } from "@/components/ui/visitor-tracking-popup";
 import { HowToReachPopup } from "@/components/ui/how-to-reach-popup";
+import FloatingMusicPlayer from "@/components/floating-music-player";
 
 // Main body font - clean and readable
 const inter = Inter({
@@ -215,6 +216,7 @@ export default function RootLayout({
             <Toaster />
             <HowToReachPopup />
             <VisitorTrackingWrapper />
+            <FloatingMusicPlayer />
           </VisitorProvider>
         </SessionProviderWrapper>
         <Analytics />

@@ -52,6 +52,17 @@ export default function EventsPage() {
       icon: Palette,
     },
     {
+      title: "Golden Music & Dance Competition",
+      date: "14-21 January 2026",
+      time: "10:00 AM - 8:00 PM",
+      location: "Main Stage",
+      description:
+        "Competitive showcase of music and dance performances featuring local and regional talent",
+      category: "Cultural",
+      color: "from-yellow-500 to-orange-500",
+      icon: Palette,
+    },
+    {
       title: "11th All India Chief Minister's Gold Cup Football Tournament",
       date: "15-20 January 2026",
       time: "10:00 AM - 6:00 PM",
@@ -240,10 +251,10 @@ export default function EventsPage() {
               className="text-center"
             >
               <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 font-playfair">
-                🎪 15 MAJOR ACTIVITIES & ATTRACTIONS
+                🎪 16 MAJOR ACTIVITIES & ATTRACTIONS
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-                Experience all 15 featured events & programs - Eight days of
+                Experience all 16 featured events & programs - Eight days of
                 spiritual, cultural, and commercial celebrations at Maghey
                 Sankranti Mela 2026
               </p>

@@ -1,9 +1,9 @@
-import { prisma } from "@/lib/prisma"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Calendar, ArrowRight } from "lucide-react"
-import { format } from "date-fns"
-import Link from "next/link"
+import { prisma } from "@/lib/prisma";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Calendar, ArrowRight } from "lucide-react";
+import { format } from "date-fns";
+import Link from "next/link";
 
 export async function NewsPreview() {
   let news = [];
@@ -27,7 +27,9 @@ export async function NewsPreview() {
         <div className="flex items-center justify-between mb-12">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-2">Latest News</h2>
-            <p className="text-xl text-muted-foreground">Stay updated with our latest announcements</p>
+            <p className="text-xl text-muted-foreground">
+              Stay updated with our latest announcements
+            </p>
           </div>
           <Link href="/news">
             <Button variant="outline" className="hidden md:flex bg-transparent">
@@ -50,7 +52,9 @@ export async function NewsPreview() {
                 <CardTitle className="text-xl">{item.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground line-clamp-3 leading-relaxed">{item.content}</p>
+                <p className="text-muted-foreground line-clamp-3 leading-relaxed">
+                  {item.content}
+                </p>
               </CardContent>
             </Card>
           ))}
@@ -66,5 +70,5 @@ export async function NewsPreview() {
         </div>
       </div>
     </section>
-  )
+  );
 }
