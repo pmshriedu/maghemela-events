@@ -305,7 +305,7 @@ export default function GalleryPage() {
               </p>
               <div className="flex flex-wrap justify-center gap-4 text-sm">
                 <span className="px-4 py-2 bg-card rounded-full border">
-                  📧 Email: vishalmukhia@gmail.com
+                  📧 Email: contact@magheymela.in
                 </span>
                 <span className="px-4 py-2 bg-card rounded-full border">
                   📱 Phone: +91 70012 71507

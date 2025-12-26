@@ -509,6 +509,58 @@ export function HowToReachPopup() {
                     </Card>
                   ))}
                 </div>
+
+                {/* Location Map */}
+                <div className="mt-6 sm:mt-8">
+                  <h4 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 flex items-center gap-2">
+                    <MapPin className="h-5 w-5 text-primary" />
+                    Festival Venue Location
+                  </h4>
+                  <Card className="border-primary/20">
+                    <CardContent className="p-3 sm:p-4">
+                      <div className="mb-3 sm:mb-4">
+                        <h5 className="font-semibold text-sm sm:text-base mb-2 text-foreground">
+                          Nayabazar Jorethang Nagar Panchayat (NJNP)
+                        </h5>
+                        <p className="text-xs sm:text-sm text-muted-foreground">
+                          South Sikkim District, Namchi - PIN: 737121
+                        </p>
+                        <p className="text-xs sm:text-sm text-muted-foreground mt-1">
+                          Sacred Confluence: River Rangeet & Rangam
+                        </p>
+                      </div>
+
+                      <div className="aspect-video w-full rounded-lg overflow-hidden border border-border mb-3 sm:mb-4">
+                        <iframe
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.123!2d88.359!3d27.1668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e69d003dd02547%3A0xa128e39d612cef01!2zSm9yZXRoYW5nIHJvYWQ!5e0!3m2!1sen!2sin!4v1703123456789!5m2!1sen!2sin"
+                          width="100%"
+                          height="100%"
+                          style={{ border: 0 }}
+                          allowFullScreen
+                          loading="lazy"
+                          referrerPolicy="no-referrer-when-downgrade"
+                          title="Nayabazar Jorethang Location Map"
+                        ></iframe>
+                      </div>
+
+                      <div className="flex flex-col sm:flex-row gap-3 items-start sm:items-center justify-between">
+                        <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
+                          <Info className="h-4 w-4 shrink-0" />
+                          <span>Interactive map - zoom and pan to explore</span>
+                        </div>
+                        <a
+                          href="https://www.google.com/maps/search/Nayabazar+Jorethang+Nagar+Panchayat+NJNP+South+Sikkim+District+Namchi+PIN+737121"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 px-3 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-xs sm:text-sm font-medium w-full sm:w-auto justify-center"
+                        >
+                          <Navigation className="h-4 w-4" />
+                          Get Directions
+                        </a>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
               </div>
             </div>
           </div>

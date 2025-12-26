@@ -32,7 +32,7 @@ export default function EventsPage() {
     {
       title: "Sandhya Aarati",
       date: "14-21 January 2026",
-      time: "6:00 PM Daily",
+      time: "5pm-6pm",
       location: "River Confluence",
       description:
         "Sacred evening prayers at the confluence of Rangeet and Rangam rivers with traditional rituals",
@@ -43,7 +43,7 @@ export default function EventsPage() {
     {
       title: "Traditional Culture & Heritage Mela",
       date: "14-21 January 2026",
-      time: "10:00 AM - 8:00 PM",
+      time: "24/7",
       location: "Heritage Pavilion",
       description:
         "Showcase of traditional arts, crafts, music, dance and cultural performances",
@@ -65,7 +65,7 @@ export default function EventsPage() {
     {
       title: "11th All India Chief Minister's Gold Cup Football Tournament",
       date: "15-20 January 2026",
-      time: "10:00 AM - 6:00 PM",
+      time: "11am-5pm",
       location: "Renovated Football Stadium",
       description:
         "AIFF-guided football tournament featuring local and regional teams",
@@ -98,7 +98,7 @@ export default function EventsPage() {
     {
       title: "SARAS Mela",
       date: "16-19 January 2026",
-      time: "10:00 AM - 7:00 PM",
+      time: "24/7",
       location: "Women's Pavilion",
       description:
         "National scale women empowerment exhibition featuring SHGs and women entrepreneurs",
@@ -109,7 +109,7 @@ export default function EventsPage() {
     {
       title: "Bangey Bazar 2.0",
       date: "14-21 January 2026",
-      time: "9:00 AM - 8:00 PM",
+      time: "24/7",
       location: "Main Festival Ground",
       description:
         "Enhanced organic marketplace showcasing youth entrepreneurship and local products",
@@ -120,7 +120,7 @@ export default function EventsPage() {
     {
       title: "Investors Meet & Business Summit",
       date: "18 January 2026",
-      time: "2:00 PM - 6:00 PM",
+      time: "10am-10pm",
       location: "Business Pavilion",
       description:
         "Networking event for startups, MSMEs, investors and business development",
@@ -131,7 +131,7 @@ export default function EventsPage() {
     {
       title: "Food & Cuisine Festival",
       date: "14-21 January 2026",
-      time: "11:00 AM - 10:00 PM",
+      time: "24/7",
       location: "Food Court & Stalls",
       description:
         "Traditional and modern cuisine from Sikkim and neighboring regions",
@@ -140,9 +140,9 @@ export default function EventsPage() {
       icon: ChefHat,
     },
     {
-      title: "Teen Street",
+      title: "Teen's Street",
       date: "15-19 January 2026",
-      time: "2:00 PM - 9:00 PM",
+      time: "10am - 12pm",
       location: "Youth Zone",
       description:
         "Dedicated space for teenagers with gaming, music, dance and interactive activities",
@@ -153,7 +153,7 @@ export default function EventsPage() {
     {
       title: "Children's Fun Zone",
       date: "14-21 January 2026",
-      time: "10:00 AM - 6:00 PM",
+      time: "10am-10pm",
       location: "Kids Area",
       description:
         "Safe play area with rides, games, educational activities and entertainment for children",
@@ -164,7 +164,7 @@ export default function EventsPage() {
     {
       title: "Tourism Promotion & Destination Showcase",
       date: "14-21 January 2026",
-      time: "10:00 AM - 7:00 PM",
+      time: "24/7",
       location: "Tourism Pavilion",
       description:
         "Showcase of Sikkim's tourist destinations, travel packages and hospitality services",
@@ -175,7 +175,7 @@ export default function EventsPage() {
     {
       title: "Government Services & Public Outreach Pavilion",
       date: "14-21 January 2026",
-      time: "10:00 AM - 5:00 PM",
+      time: "10am-10pm",
       location: "Government Pavilion",
       description:
         "Information and services from various government departments and public schemes",
@@ -186,7 +186,7 @@ export default function EventsPage() {
     {
       title: "Merchandise",
       date: "14-21 January 2026",
-      time: "9:00 AM - 8:00 PM",
+      time: "24/7",
       location: "Merchandise Stalls",
       description:
         "Official festival merchandise, local handicrafts and souvenir shopping",
@@ -197,7 +197,7 @@ export default function EventsPage() {
     {
       title: "Rural Sports & Others",
       date: "17-20 January 2026",
-      time: "11:00 AM - 5:00 PM",
+      time: "8am - 5pm",
       location: "Sports Ground",
       description:
         "Traditional rural sports competitions, folk games and cultural sports activities",
@@ -395,7 +395,7 @@ export default function EventsPage() {
                 await you.
               </p>
               <div className="text-lg font-semibold text-primary">
-                📧 Contact: vishalmukhia@gmail.com <br />
+                📧 Contact: contact@magheymela.in <br />
                 📞 Phone: +91 70012 71507 <br />
                 📞 Phone: +91 6296 796 429 <br />
                 🌐 Website: www.magheymela.com

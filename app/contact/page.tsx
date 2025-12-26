@@ -47,9 +47,9 @@ export default function ContactPage() {
       icon: Mail,
       title: "Email Contact",
       details: [
-        "General Inquiries: vishalmukhia@gmail.com",
-        "Media Inquiries: vishalmukhia@gmail.com",
-        "Sponsorship: vishalmukhia@gmail.com",
+        "General Inquiries: contact@magheymela.in",
+        "Media Inquiries: contact@magheymela.in",
+        "Sponsorship: contact@magheymela.in",
       ],
       color: "text-primary",
     },
@@ -188,6 +188,65 @@ export default function ContactPage() {
           </div>
         </section>
 
+        {/* Google Maps Section */}
+        <section className="py-16 px-4">
+          <div className="container mx-auto max-w-6xl">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            >
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
+                📍 Location & Directions
+              </h2>
+
+              <div className="bg-card rounded-2xl border border-border overflow-hidden shadow-lg">
+                <div className="p-6 border-b border-border">
+                  <h3 className="text-xl font-semibold mb-2 text-foreground">
+                    Nayabazar Jorethang Nagar Panchayat (NJNP)
+                  </h3>
+                  <p className="text-muted-foreground">
+                    South Sikkim District, Namchi - PIN: 737121
+                  </p>
+                  <p className="text-muted-foreground mt-2">
+                    Sacred Confluence: River Rangeet & Rangam
+                  </p>
+                </div>
+
+                <div className="aspect-video w-full">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.123!2d88.359!3d27.1668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e69d003dd02547%3A0xa128e39d612cef01!2zSm9yZXRoYW5nIHJvYWQ!5e0!3m2!1sen!2sin!4v1703123456789!5m2!1sen!2sin"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Nayabazar Jorethang Location Map"
+                  ></iframe>
+                </div>
+
+                <div className="p-6 bg-muted/20">
+                  <div className="flex flex-col sm:flex-row gap-4 items-center justify-between">
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <MapPin className="h-4 w-4" />
+                      <span>Click on the map for detailed directions</span>
+                    </div>
+                    <a
+                      href="https://www.google.com/maps/search/Nayabazar+Jorethang+Nagar+Panchayat+NJNP+South+Sikkim+District+Namchi+PIN+737121"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
+                    >
+                      Open in Google Maps
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
         {/* Leadership Section */}
         <section className="py-16 px-4 bg-muted/10">
           <div className="container mx-auto max-w-4xl">
@@ -264,7 +323,7 @@ export default function ContactPage() {
                     📞 Accommodation Helpline: +91 70012 71507
                   </span>
                   <span className="px-4 py-2 bg-card rounded-full border">
-                    📧 vishalmukhia@gmail.com
+                    📧 contact@magheymela.in
                   </span>
                 </div>
               </div>

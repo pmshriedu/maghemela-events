@@ -5,6 +5,7 @@ class MusicManager {
   private listeners: (() => void)[] = [];
   private initialized = false;
   private currentTime = 0;
+  private musicAllowed = true;
 
   constructor() {
     // Check if already exists on globalThis
@@ -71,7 +72,8 @@ class MusicManager {
       if (
         document.visibilityState === "visible" &&
         this.isPlaying &&
-        this.audio
+        this.audio &&
+        this.musicAllowed
       ) {
         // Page became visible again, ensure audio is still playing
         if (this.audio.paused && this.audio.currentTime > 0) {
@@ -102,36 +104,38 @@ class MusicManager {
     if (shouldPlay) {
       // Delay autoplay to ensure DOM is ready
       setTimeout(() => {
-        this.audio!.play().catch(() => {
-          // Autoplay blocked - wait for user interaction
-          this.isPlaying = false;
-          this.notifyListeners();
+        if (this.musicAllowed) {
+          this.audio!.play().catch(() => {
+            // Autoplay blocked - wait for user interaction
+            this.isPlaying = false;
+            this.notifyListeners();
 
-          const startOnInteraction = () => {
-            if (this.currentTime > 0) {
-              this.audio!.currentTime = this.currentTime;
-            }
-            this.audio!.play()
-              .then(() => {
-                this.isPlaying = true;
-                localStorage.setItem("music_player_state", "playing");
-                sessionStorage.removeItem("music_was_playing");
-                this.notifyListeners();
-              })
-              .catch(() => {
-                // Still blocked
-              });
-            document.removeEventListener("click", startOnInteraction);
-            document.removeEventListener("touchstart", startOnInteraction);
-          };
+            const startOnInteraction = () => {
+              if (this.currentTime > 0) {
+                this.audio!.currentTime = this.currentTime;
+              }
+              this.audio!.play()
+                .then(() => {
+                  this.isPlaying = true;
+                  localStorage.setItem("music_player_state", "playing");
+                  sessionStorage.removeItem("music_was_playing");
+                  this.notifyListeners();
+                })
+                .catch(() => {
+                  // Still blocked
+                });
+              document.removeEventListener("click", startOnInteraction);
+              document.removeEventListener("touchstart", startOnInteraction);
+            };
 
-          document.addEventListener("click", startOnInteraction, {
-            once: true,
+            document.addEventListener("click", startOnInteraction, {
+              once: true,
+            });
+            document.addEventListener("touchstart", startOnInteraction, {
+              once: true,
+            });
           });
-          document.addEventListener("touchstart", startOnInteraction, {
-            once: true,
-          });
-        });
+        }
       }, 100);
     }
   }
@@ -154,6 +158,13 @@ class MusicManager {
       this.audio.play().catch(() => {
         // Play failed - will be handled by user interaction listeners
       });
+    }
+  }
+
+  public setMusicAllowed(allowed: boolean): void {
+    this.musicAllowed = allowed;
+    if (!allowed && this.isPlaying) {
+      this.audio?.pause();
     }
   }
 

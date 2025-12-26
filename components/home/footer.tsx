@@ -87,7 +87,7 @@ export function Footer() {
             <ul className="space-y-2 text-primary-foreground/80">
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4" />
-                vishalmukhia@gmail.com
+                contact@magheymela.in
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
@@ -136,7 +136,21 @@ export function Footer() {
         </div>
 
         <div className="border-t border-primary-foreground/20 pt-8 text-center text-primary-foreground/80">
-          <p>© 2025 Maghey Sankranti Mela. All rights reserved.</p>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4">
+            <p className="text-sm sm:text-base">
+              © 2025 Maghey Sankranti Mela. All rights reserved.
+            </p>
+            <div className="hidden sm:block w-px h-4 bg-primary-foreground/30"></div>
+            <p className="text-sm sm:text-base font-medium">
+              Photo Credit:{" "}
+              <a
+                href="mailto:stwangdi@gmail.com"
+                className="hover:text-primary-foreground transition-colors underline decoration-1 underline-offset-2"
+              >
+                stwangdi@gmail.com
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>

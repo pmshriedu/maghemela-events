@@ -508,7 +508,7 @@ export default function HomestaysPage() {
                 </div>
               </div>
               <div className="mt-6 text-center text-lg font-semibold text-primary">
-                📧 Contact: vishalmukhia@gmail.com <br />
+                📧 Contact: contact@magheymela.in <br />
                 📞 Phone: +91 70012 71507 <br />
                 📞 Phone: +91 6296 796 429
               </div>
