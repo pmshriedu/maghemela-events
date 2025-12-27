@@ -195,7 +195,7 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="relative w-full max-w-4xl mx-auto mb-6 lg:max-w-2xl"
+            className="relative w-full max-w-4xl mx-auto mb-6 md:max-w-3xl lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl"
           >
             <div className="relative w-full h-auto">
               <Image
