@@ -372,7 +372,7 @@ export default function HomestaysPage() {
                     <div className="w-12 h-12 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 flex items-center justify-center mx-auto mb-4">
                       <Home className="h-6 w-6 text-white" />
                     </div>
-                    <h3 className="text-2xl font-bold text-foreground">7</h3>
+                    <h3 className="text-2xl font-bold text-foreground">30+</h3>
                     <p className="text-muted-foreground">Homestays Available</p>
                     <p className="text-sm text-muted-foreground">
                       25+ Rooms & Cottages
@@ -391,7 +391,7 @@ export default function HomestaysPage() {
                     <div className="w-12 h-12 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center mx-auto mb-4">
                       <Mountain className="h-6 w-6 text-white" />
                     </div>
-                    <h3 className="text-2xl font-bold text-foreground">8</h3>
+                    <h3 className="text-2xl font-bold text-foreground">20+</h3>
                     <p className="text-muted-foreground">Hotels Available</p>
                     <p className="text-sm text-muted-foreground">
                       71 Rooms Total

@@ -20,7 +20,7 @@ export default function ContactPage() {
     {
       icon: Users,
       title: "Organising Committee",
-      details: ["Jorethang Maghey Sankranti Mela Committee (MSMC) 2026"],
+      details: ["Maghey Sankranti Mela 2026 . Jorethang Nayabazar"],
       color: "text-primary",
     },
     {

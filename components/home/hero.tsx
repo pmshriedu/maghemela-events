@@ -99,6 +99,13 @@ const Confetti = () => {
 
 export default function Hero() {
   const containerRef = useRef(null);
+  const [isClient, setIsClient] = useState(false);
+
+  // Set client-side flag
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end start"],
@@ -107,6 +114,7 @@ export default function Hero() {
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.1]);
   const [showConfetti, setShowConfetti] = useState(false);
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+  const [videosLoaded, setVideosLoaded] = useState<boolean[]>([]);
 
   const videos = [
     "/assets/herosection/hero.mp4",
@@ -128,13 +136,24 @@ export default function Hero() {
     return () => clearInterval(interval);
   }, [videos.length]);
 
+  const handleVideoLoad = (index: number) => {
+    setVideosLoaded((prev) => {
+      const newLoaded = [...prev];
+      newLoaded[index] = true;
+      return newLoaded;
+    });
+  };
+
   return (
     <section
       ref={containerRef}
-      className="relative h-screen flex items-center justify-center overflow-hidden"
+      className="relative h-screen flex items-center justify-center overflow-hidden bg-black"
     >
       {/* Background Video Slideshow */}
-      <motion.div className="absolute inset-0 w-full h-full" style={{ scale }}>
+      <motion.div
+        className="absolute inset-0 w-full h-full bg-black"
+        style={isClient ? { scale } : {}}
+      >
         {videos.map((videoSrc, index) => (
           <motion.video
             key={videoSrc}
@@ -142,11 +161,13 @@ export default function Hero() {
             loop
             muted
             playsInline
-            preload="metadata"
+            preload="auto"
             className="absolute inset-0 w-full h-full object-cover"
             initial={{ opacity: index === 0 ? 1 : 0 }}
             animate={{ opacity: index === currentVideoIndex ? 1 : 0 }}
             transition={{ duration: 2, ease: "easeInOut" }}
+            onLoadedData={() => handleVideoLoad(index)}
+            onCanPlay={() => handleVideoLoad(index)}
           >
             <source src={videoSrc} type="video/mp4" />
             Your browser does not support the video tag.

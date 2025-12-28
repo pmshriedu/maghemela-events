@@ -26,6 +26,7 @@ import { DesktopDock } from "@/components/navigation/desktop-dock";
 import { MobileNav } from "@/components/navigation/mobile-nav";
 import { UpcomingEvents } from "@/components/home/upcoming-events";
 import Head from "next/head";
+import Image from "next/image";
 
 export default function EventsPage() {
   const events = [
@@ -39,6 +40,7 @@ export default function EventsPage() {
       category: "Spiritual",
       color: "from-orange-500 to-red-500",
       icon: Heart,
+      image: "/assets/gallery/eve/Sandhya Aarati.jpeg",
     },
     {
       title: "Traditional Culture & Heritage Mela",
@@ -50,6 +52,7 @@ export default function EventsPage() {
       category: "Cultural",
       color: "from-amber-500 to-yellow-500",
       icon: Palette,
+      image: "/assets/gallery/eve/Traditional Culture & Heritage Mela.jpeg",
     },
     {
       title: "Golden Music & Dance Competition",
@@ -61,6 +64,7 @@ export default function EventsPage() {
       category: "Cultural",
       color: "from-yellow-500 to-orange-500",
       icon: Palette,
+      image: "/assets/gallery/eve/Golden Music & Dance Competition.jpeg",
     },
     {
       title: "11th All India Chief Minister's Gold Cup Football Tournament",
@@ -72,6 +76,8 @@ export default function EventsPage() {
       category: "Sports",
       color: "from-green-500 to-emerald-500",
       icon: Trophy,
+      image:
+        "/assets/gallery/eve/11th All India Chief Minister's Gold Cup Football Tournament.jpeg",
     },
     {
       title: "Agriculture & Floriculture Exhibition",
@@ -83,6 +89,7 @@ export default function EventsPage() {
       category: "Agriculture",
       color: "from-lime-500 to-green-500",
       icon: Leaf,
+      image: "/assets/gallery/eve/Agriculture & Floriculture Exhibition.jpeg",
     },
     {
       title: "Adventure & River Tourism Activities",
@@ -94,6 +101,7 @@ export default function EventsPage() {
       category: "Adventure",
       color: "from-teal-500 to-cyan-500",
       icon: Mountain,
+      image: "/assets/gallery/eve/Adventure & River Tourism Activities.jpeg",
     },
     {
       title: "SARAS Mela",
@@ -105,6 +113,7 @@ export default function EventsPage() {
       category: "Empowerment",
       color: "from-purple-500 to-pink-500",
       icon: Crown,
+      image: "/assets/gallery/eve/Saras Mela.jpeg",
     },
     {
       title: "Bangey Bazar 2.0",
@@ -116,6 +125,7 @@ export default function EventsPage() {
       category: "Commerce",
       color: "from-blue-500 to-cyan-500",
       icon: ShoppingCart,
+      image: "/assets/gallery/eve/Bangey Bazar 2.0.jpeg",
     },
     {
       title: "Investors Meet & Business Summit",
@@ -127,6 +137,7 @@ export default function EventsPage() {
       category: "Business",
       color: "from-slate-500 to-gray-600",
       icon: Briefcase,
+      image: "/assets/gallery/eve/Investors Meet & Business Summit.jpeg",
     },
     {
       title: "Food & Cuisine Festival",
@@ -138,6 +149,7 @@ export default function EventsPage() {
       category: "Culinary",
       color: "from-red-500 to-orange-500",
       icon: ChefHat,
+      image: "/assets/gallery/eve/Food & Cuisine Festival.jpeg",
     },
     {
       title: "Teen's Street",
@@ -149,6 +161,7 @@ export default function EventsPage() {
       category: "Youth",
       color: "from-violet-500 to-purple-500",
       icon: User,
+      image: "/assets/gallery/eve/Teen's Street.jpeg",
     },
     {
       title: "Children's Fun Zone",
@@ -160,6 +173,7 @@ export default function EventsPage() {
       category: "Family",
       color: "from-pink-500 to-rose-500",
       icon: Home,
+      image: "/assets/gallery/eve/Children's Fun Zone.jpeg",
     },
     {
       title: "Tourism Promotion & Destination Showcase",
@@ -171,6 +185,8 @@ export default function EventsPage() {
       category: "Tourism",
       color: "from-sky-500 to-blue-500",
       icon: Map,
+      image:
+        "/assets/gallery/eve/Tourism Promotion & Destination Showcase.jpeg",
     },
     {
       title: "Government Services & Public Outreach Pavilion",
@@ -182,6 +198,8 @@ export default function EventsPage() {
       category: "Public Service",
       color: "from-indigo-500 to-blue-500",
       icon: Shield,
+      image:
+        "/assets/gallery/eve/Government Services & Public Outreach Pavilion.jpeg",
     },
     {
       title: "Merchandise",
@@ -193,6 +211,7 @@ export default function EventsPage() {
       category: "Shopping",
       color: "from-emerald-500 to-teal-500",
       icon: ShoppingBag,
+      image: "/assets/gallery/eve/Merchandise.jpeg",
     },
     {
       title: "Rural Sports & Others",
@@ -204,6 +223,7 @@ export default function EventsPage() {
       category: "Traditional Sports",
       color: "from-orange-600 to-red-600",
       icon: Target,
+      image: "/assets/gallery/eve/Rural Sports & Others.jpeg",
     },
   ];
 
@@ -280,6 +300,226 @@ export default function EventsPage() {
         {/* Upcoming Events Section */}
         <UpcomingEvents />
 
+        {/* Zone Map Banner */}
+        <section className="py-16 px-4 bg-muted/5">
+          <div className="container mx-auto max-w-6xl">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 font-playfair">
+                PROPOSED ZONE MAPPING
+              </h2>
+              <h3 className="text-xl md:text-2xl font-medium text-muted-foreground">
+                JORETHANG – NAYABAZAR
+                <br />
+                MAGHEY MELA 2026
+              </h3>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="bg-card rounded-2xl border border-border shadow-lg overflow-hidden mb-12"
+            >
+              <div className="relative">
+                <img
+                  src="/assets/zone-map/ZONEMAPPINGIMAGE.jpg"
+                  alt="Zone Mapping for Maghey Mela 2026"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </motion.div>
+
+            {/* Major Location Labels - Full Width */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="bg-card rounded-xl border border-border p-6 mb-8"
+            >
+              <h5 className="text-lg font-semibold text-foreground mb-4">
+                MAJOR LOCATION LABELS (as seen on map)
+              </h5>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                <span className="text-muted-foreground">• Akar Bridge</span>
+                <span className="text-muted-foreground">• Jorethang</span>
+                <span className="text-muted-foreground">• Green Park</span>
+                <span className="text-muted-foreground">• River Rangeet</span>
+                <span className="text-muted-foreground">• Sikkim</span>
+                <span className="text-muted-foreground">• West Bengal</span>
+                <span className="text-muted-foreground">• General Parking</span>
+                <span className="text-muted-foreground">• Parking Akaray</span>
+              </div>
+            </motion.div>
+
+            {/* Legend - Full Width */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+              className="bg-card rounded-xl border border-border p-6 mb-8"
+            >
+              <h5 className="text-lg font-semibold text-foreground mb-4">
+                LEGEND
+              </h5>
+              <h6 className="text-md font-medium text-primary mb-3">
+                PROPOSED EVENTS & VENUES
+              </h6>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-border">
+                      <th className="text-left py-2 font-medium">SL. NO</th>
+                      <th className="text-left py-2 font-medium">
+                        PROPOSED EVENTS
+                      </th>
+                      <th className="text-left py-2 font-medium">VENUE</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-border/50">
+                      <td className="py-2">1</td>
+                      <td className="py-2">
+                        Sports / Cultural / Official Events
+                      </td>
+                      <td className="py-2">Football Ground</td>
+                    </tr>
+                    <tr className="border-b border-border/50">
+                      <td className="py-2">2</td>
+                      <td className="py-2">Parking (General & VIP)</td>
+                      <td className="py-2">Khola Bagar / School Ground</td>
+                    </tr>
+                    <tr className="border-b border-border/50">
+                      <td className="py-2">3</td>
+                      <td className="py-2">
+                        Entertainment Zone (Mega Mela, Tambola, Circus, Mini
+                        Goal etc.)
+                      </td>
+                      <td className="py-2">Nayabazar Bagar, Soreng Stand</td>
+                    </tr>
+                    <tr className="border-b border-border/50">
+                      <td className="py-2">4</td>
+                      <td className="py-2">Expo Events / Exhibition</td>
+                      <td className="py-2">
+                        Van Stand, Truck Stand, Middle Lane
+                      </td>
+                    </tr>
+                    <tr className="border-b border-border/50">
+                      <td className="py-2">5</td>
+                      <td className="py-2">Traditional Stalls</td>
+                      <td className="py-2">Old Truck Stand</td>
+                    </tr>
+                    <tr className="border-b border-border/50">
+                      <td className="py-2">6</td>
+                      <td className="py-2">Saras Mela</td>
+                      <td className="py-2">S.N.T Complex</td>
+                    </tr>
+                    <tr className="border-b border-border/50">
+                      <td className="py-2">7</td>
+                      <td className="py-2">Bangay Bazaar</td>
+                      <td className="py-2">Volley Ball Ground</td>
+                    </tr>
+                    <tr className="border-b border-border/50">
+                      <td className="py-2">8</td>
+                      <td className="py-2">Teen Street / Art Exhibition</td>
+                      <td className="py-2">Middle Lane</td>
+                    </tr>
+                    <tr className="border-b border-border/50">
+                      <td className="py-2">9</td>
+                      <td className="py-2">J.B / Hawkers / Manihaari Shops</td>
+                      <td className="py-2">
+                        Circular Road, 1st Lane, 3rd Lane
+                      </td>
+                    </tr>
+                    <tr className="border-b border-border/50">
+                      <td className="py-2">10</td>
+                      <td className="py-2">
+                        IPR Exhibition / Departmental Stalls
+                      </td>
+                      <td className="py-2">Green Park</td>
+                    </tr>
+                    <tr className="border-b border-border/50">
+                      <td className="py-2">11</td>
+                      <td className="py-2">
+                        Organic Market (Oranges & Local Kiwis)
+                      </td>
+                      <td className="py-2">
+                        Near Forest Check Post, Nayabazar
+                      </td>
+                    </tr>
+                    <tr className="border-b border-border/50">
+                      <td className="py-2">12</td>
+                      <td className="py-2">Local Hotels / Fast Food</td>
+                      <td className="py-2">
+                        Soreng Stand, Gangtok Stand & Selective Areas
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-2">13</td>
+                      <td className="py-2">
+                        Welcome Gates, Information Kiosks, Help Desks
+                      </td>
+                      <td className="py-2">
+                        Nayabazar, Namgyal Hotel, RDD Office
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </motion.div>
+
+            {/* Color-Coded Zones */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 1.0 }}
+              className="mt-8 bg-card rounded-xl border border-border p-6"
+            >
+              <h5 className="text-lg font-semibold text-foreground mb-4">
+                COLOR-CODED ZONES (as per numbering on map)
+              </h5>
+              <div className="grid md:grid-cols-2 gap-4 text-sm">
+                <div className="flex items-center gap-3">
+                  <div className="w-4 h-4 rounded bg-orange-500"></div>
+                  <span>1 (Orange) – Main Event / Cultural Zone</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-4 h-4 rounded bg-blue-500"></div>
+                  <span>2 (Blue) – General & VIP Parking Areas</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-4 h-4 rounded bg-purple-500"></div>
+                  <span>3 (Purple) – Entertainment / Mela Zone</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-4 h-4 rounded bg-green-300"></div>
+                  <span>4 (Light Green) – Exhibition & Expo</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-4 h-4 rounded bg-yellow-500"></div>
+                  <span>5 (Yellow) – Traditional Sales</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-4 h-4 rounded bg-cyan-500"></div>
+                  <span>6 (Cyan) – Saras Mela</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-4 h-4 rounded bg-yellow-600"></div>
+                  <span>7 (Dark Yellow) – Bangay Bazaar</span>
+                </div>
+                <div className="col-span-full text-center mt-4 text-muted-foreground">
+                  8–13 – Supporting activities, stalls, access, help & info
+                  zones
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
         {/* Events Grid */}
         <section className="py-16 px-4">
           <div className="container mx-auto max-w-6xl">
@@ -304,6 +544,15 @@ export default function EventsPage() {
                     <div
                       className={`absolute top-0 left-0 right-0 h-1 bg-linear-to-r ${event.color}`}
                     />
+
+                    <div className="relative aspect-square overflow-hidden">
+                      <Image
+                        src={event.image}
+                        alt={event.title}
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
 
                     <div className="p-6">
                       <div className="mb-4">
