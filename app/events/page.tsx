@@ -68,7 +68,7 @@ export default function EventsPage() {
     },
     {
       title: "11th All India Chief Minister's Gold Cup Football Tournament",
-      date: "15-20 January 2026",
+      date: "5-21 January 2026",
       time: "11am-5pm",
       location: "Renovated Football Stadium",
       description:
@@ -105,7 +105,7 @@ export default function EventsPage() {
     },
     {
       title: "SARAS Mela",
-      date: "16-19 January 2026",
+      date: "14-21 January 2026",
       time: "24/7",
       location: "Women's Pavilion",
       description:
@@ -129,7 +129,7 @@ export default function EventsPage() {
     },
     {
       title: "Investors Meet & Business Summit",
-      date: "18 January 2026",
+      date: "14-21 January 2026",
       time: "10am-10pm",
       location: "Business Pavilion",
       description:
@@ -153,7 +153,7 @@ export default function EventsPage() {
     },
     {
       title: "Teen's Street",
-      date: "15-19 January 2026",
+      date: "14-21 January 2026",
       time: "10am - 12pm",
       location: "Youth Zone",
       description:
@@ -215,7 +215,7 @@ export default function EventsPage() {
     },
     {
       title: "Rural Sports & Others",
-      date: "17-20 January 2026",
+      date: "5-21 January 2026",
       time: "8am - 5pm",
       location: "Sports Ground",
       description:
