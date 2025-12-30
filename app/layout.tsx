@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     template: "%s | Maghey Sankranti Mela 2026",
   },
   description:
-    "Experience the 71-year legacy of Maghey Sankranti Mela at Jorethang Nayabazar, Sikkim. Join thousands for cultural performances, adventure activities, holy dips, and festivities celebrating Sikkim's rich heritage from January 14-21, 2026.",
+    "Experience the 71-year legacy of Maghey Sankranti Mela at Jorethang Nayabazar, Sikkim. Join thousands for cultural performances, adventure activities, holy dips, and festivities celebrating Sikkim's rich heritage from January 14-22, 2026.",
   keywords: [
     "Maghey Sankranti Mela",
     "Jorethang Nayabazar",
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Maghey Sankranti Mela 2026 - Sikkim's Grandest Cultural Festival",
     description:
-      "Experience 71 years of cultural heritage at Jorethang Nayabazar, Sikkim. Join thousands for cultural performances, adventure activities, and traditional celebrations from January 14-21, 2026.",
+      "Experience 71 years of cultural heritage at Jorethang Nayabazar, Sikkim. Join thousands for cultural performances, adventure activities, and traditional celebrations from January 14-22, 2026.",
     url: "https://magheymela.com",
     siteName: "Maghey Sankranti Mela 2026",
     locale: "en_US",

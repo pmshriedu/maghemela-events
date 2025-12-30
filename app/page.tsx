@@ -18,7 +18,7 @@ import { MobileNav } from "@/components/navigation/mobile-nav";
 export const metadata: Metadata = {
   title: "Home - Welcome to Maghey Sankranti Mela 2026",
   description:
-    "Welcome to the official website of Maghey Sankranti Mela 2026, Sikkim's grandest cultural festival at Jorethang Nayabazar. Experience 71 years of tradition, cultural heritage, adventure activities, and spiritual celebrations from January 14-21, 2026.",
+    "Welcome to the official website of Maghey Sankranti Mela 2026, Sikkim's grandest cultural festival at Jorethang Nayabazar. Experience 71 years of tradition, cultural heritage, adventure activities, and spiritual celebrations from January 14-22, 2026.",
   keywords: [
     "home page",
     "welcome",

@@ -37,8 +37,8 @@ export default function ContactPage() {
       icon: Calendar,
       title: "Festival Dates",
       details: [
-        "14th January – 21st January 2026",
-        "8 Days of Celebration",
+        "14th January – 22nd January 2026",
+        "9 Days of Celebration",
         "Daily Events: 6:00 AM - 10:00 PM",
       ],
       color: "text-accent",

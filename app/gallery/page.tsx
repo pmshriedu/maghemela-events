@@ -75,38 +75,28 @@ export default function GalleryPage() {
       category: "Community",
     },
     {
-      src: "/assets/gallery/banner gallery/bn0gallery11.jpeg",
+      src: "/assets/gallery/banner gallery/bn0gallery12.jpeg",
       title: "Community Celebration 2",
       category: "Community",
     },
     {
-      src: "/assets/gallery/banner gallery/bn0gallery12.jpeg",
+      src: "/assets/gallery/banner gallery/bn0gallery123.jpeg",
       title: "Community Celebration 3",
       category: "Community",
     },
     {
-      src: "/assets/gallery/banner gallery/bn0gallery123.jpeg",
+      src: "/assets/gallery/banner gallery/bn0gallery12ds.jpeg",
       title: "Community Celebration 4",
       category: "Community",
     },
     {
-      src: "/assets/gallery/banner gallery/bn0gallery1234.jpeg",
+      src: "/assets/gallery/banner gallery/bn0gallerynew1.jpeg",
       title: "Community Celebration 5",
       category: "Community",
     },
     {
-      src: "/assets/gallery/banner gallery/bn0gallery12343.jpeg",
+      src: "/assets/gallery/banner gallery/bn0gallerynew2.jpeg",
       title: "Community Celebration 6",
-      category: "Community",
-    },
-    {
-      src: "/assets/gallery/banner gallery/bn0gallery1234332.jpeg",
-      title: "Community Celebration 7",
-      category: "Community",
-    },
-    {
-      src: "/assets/gallery/banner gallery/bn0gallery12ds.jpeg",
-      title: "Community Celebration 8",
       category: "Community",
     },
   ];

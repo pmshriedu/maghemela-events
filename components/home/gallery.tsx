@@ -15,6 +15,30 @@ const images = [
   { src: "/assets/gallery/book stall.jpg", alt: "Book Stall Exhibition" },
   { src: "/assets/gallery/logo launching.jpg", alt: "Logo Launching Ceremony" },
   { src: "/assets/gallery/Damphu.jpg", alt: "Damphu Traditional Music" },
+  {
+    src: "/assets/gallery/banner gallery/bn0gallery1.jpeg",
+    alt: "Festival Banner Gallery 1",
+  },
+  {
+    src: "/assets/gallery/banner gallery/bn0gallery12.jpeg",
+    alt: "Festival Banner Gallery 2",
+  },
+  {
+    src: "/assets/gallery/banner gallery/bn0gallery123.jpeg",
+    alt: "Festival Banner Gallery 3",
+  },
+  {
+    src: "/assets/gallery/banner gallery/bn0gallery12ds.jpeg",
+    alt: "Festival Banner Gallery 4",
+  },
+  {
+    src: "/assets/gallery/banner gallery/bn0gallerynew1.jpeg",
+    alt: "Festival Banner Gallery 5",
+  },
+  {
+    src: "/assets/gallery/banner gallery/bn0gallerynew2.jpeg",
+    alt: "Festival Banner Gallery 6",
+  },
 ];
 
 export function Gallery() {

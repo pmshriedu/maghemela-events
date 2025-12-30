@@ -33,7 +33,7 @@ export function Banner() {
             <div className="relative bg-gradient-to-br from-green-700 to-emerald-600 rounded-xl md:rounded-2xl p-[2px] md:p-[3px] shadow-2xl">
               <div className="relative w-full h-auto overflow-hidden rounded-lg md:rounded-xl bg-white">
                 <Image
-                  src="/assets/banner/banner.jpg"
+                  src="/assets/banner/banner.jpeg"
                   alt="Maghey Sankranti Mela Banner"
                   width={1600}
                   height={677}

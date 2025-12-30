@@ -32,7 +32,7 @@ export default function EventsPage() {
   const events = [
     {
       title: "Sandhya Aarati",
-      date: "14-21 January 2026",
+      date: "14-22 January 2026",
       time: "5pm-6pm",
       location: "River Confluence",
       description:
@@ -44,7 +44,7 @@ export default function EventsPage() {
     },
     {
       title: "Traditional Culture & Heritage Mela",
-      date: "14-21 January 2026",
+      date: "14-22 January 2026",
       time: "24/7",
       location: "Heritage Pavilion",
       description:
@@ -56,7 +56,7 @@ export default function EventsPage() {
     },
     {
       title: "Golden Music & Dance Competition",
-      date: "14-21 January 2026",
+      date: "14-22 January 2026",
       time: "10:00 AM - 8:00 PM",
       location: "Main Stage",
       description:
@@ -68,7 +68,7 @@ export default function EventsPage() {
     },
     {
       title: "11th All India Chief Minister's Gold Cup Football Tournament",
-      date: "5-21 January 2026",
+      date: "5-22 January 2026",
       time: "11am-5pm",
       location: "Renovated Football Stadium",
       description:
@@ -81,7 +81,7 @@ export default function EventsPage() {
     },
     {
       title: "Agriculture & Floriculture Exhibition",
-      date: "14-21 January 2026",
+      date: "14-22 January 2026",
       time: "9:00 AM - 7:00 PM",
       location: "Agriculture Pavilion",
       description:
@@ -93,7 +93,7 @@ export default function EventsPage() {
     },
     {
       title: "Adventure & River Tourism Activities",
-      date: "14-21 January 2026",
+      date: "14-22 January 2026",
       time: "8:00 AM - 6:00 PM",
       location: "Adventure Zone & Riverside",
       description:
@@ -105,7 +105,7 @@ export default function EventsPage() {
     },
     {
       title: "SARAS Mela",
-      date: "14-21 January 2026",
+      date: "14-22 January 2026",
       time: "24/7",
       location: "Women's Pavilion",
       description:
@@ -117,7 +117,7 @@ export default function EventsPage() {
     },
     {
       title: "Bangey Bazar 2.0",
-      date: "14-21 January 2026",
+      date: "14-22 January 2026",
       time: "24/7",
       location: "Main Festival Ground",
       description:
@@ -129,7 +129,7 @@ export default function EventsPage() {
     },
     {
       title: "Investors Meet & Business Summit",
-      date: "14-21 January 2026",
+      date: "14-22 January 2026",
       time: "10am-10pm",
       location: "Business Pavilion",
       description:
@@ -141,7 +141,7 @@ export default function EventsPage() {
     },
     {
       title: "Food & Cuisine Festival",
-      date: "14-21 January 2026",
+      date: "14-22 January 2026",
       time: "24/7",
       location: "Food Court & Stalls",
       description:
@@ -153,7 +153,7 @@ export default function EventsPage() {
     },
     {
       title: "Teen's Street",
-      date: "14-21 January 2026",
+      date: "14-22 January 2026",
       time: "10am - 12pm",
       location: "Youth Zone",
       description:
@@ -165,7 +165,7 @@ export default function EventsPage() {
     },
     {
       title: "Children's Fun Zone",
-      date: "14-21 January 2026",
+      date: "14-22 January 2026",
       time: "10am-10pm",
       location: "Kids Area",
       description:
@@ -177,7 +177,7 @@ export default function EventsPage() {
     },
     {
       title: "Tourism Promotion & Destination Showcase",
-      date: "14-21 January 2026",
+      date: "14-22 January 2026",
       time: "24/7",
       location: "Tourism Pavilion",
       description:
@@ -190,7 +190,7 @@ export default function EventsPage() {
     },
     {
       title: "Government Services & Public Outreach Pavilion",
-      date: "14-21 January 2026",
+      date: "14-22 January 2026",
       time: "10am-10pm",
       location: "Government Pavilion",
       description:
@@ -203,7 +203,7 @@ export default function EventsPage() {
     },
     {
       title: "Merchandise",
-      date: "14-21 January 2026",
+      date: "14-22 January 2026",
       time: "24/7",
       location: "Merchandise Stalls",
       description:
@@ -215,7 +215,7 @@ export default function EventsPage() {
     },
     {
       title: "Rural Sports & Others",
-      date: "5-21 January 2026",
+      date: "5-22 January 2026",
       time: "8am - 5pm",
       location: "Sports Ground",
       description:
@@ -242,7 +242,7 @@ export default function EventsPage() {
         <title>Events & Activities - Maghey Sankranti Mela 2026</title>
         <meta
           name="description"
-          content="Explore all events and activities at Maghey Sankranti Mela 2026. From cultural performances to adventure sports, spiritual ceremonies to food festivals. Join us at Jorethang Nayabazar, Sikkim from January 14-21, 2026."
+          content="Explore all events and activities at Maghey Sankranti Mela 2026. From cultural performances to adventure sports, spiritual ceremonies to food festivals. Join us at Jorethang Nayabazar, Sikkim from January 14-22, 2026."
         />
         <meta
           name="keywords"
@@ -282,7 +282,7 @@ export default function EventsPage() {
               <div className="flex flex-wrap justify-center gap-4 text-sm">
                 <div className="flex items-center gap-2 px-4 py-2 bg-card rounded-full border">
                   <Calendar className="h-4 w-4 text-primary" />
-                  <span>14-21 January 2026</span>
+                  <span>14-22 January 2026</span>
                 </div>
                 <div className="flex items-center gap-2 px-4 py-2 bg-card rounded-full border">
                   <MapPin className="h-4 w-4 text-secondary" />

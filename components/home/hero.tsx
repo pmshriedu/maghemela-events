@@ -245,7 +245,7 @@ export default function Hero() {
             confluence of Rangeet and Rammam rivers. Celebrating 71 years of
             heritage, tradition, and unity from{" "}
             <span className="text-amber-400 font-semibold">
-              January 14-21, 2026
+              January 14-22, 2026
             </span>{" "}
             at Jorethang Nayabazar, Namchi District.
           </motion.p>
@@ -260,7 +260,7 @@ export default function Hero() {
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
               <Calendar className="h-5 w-5 text-amber-400" />
               <span className="text-white text-sm font-medium">
-                Jan 14-21, 2026
+                Jan 14-22, 2026
               </span>
             </div>
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">

@@ -338,7 +338,7 @@ export default function HomestaysPage() {
               <div className="flex flex-wrap justify-center gap-4 text-sm">
                 <div className="flex items-center gap-2 px-4 py-2 bg-card rounded-full border">
                   <Calendar className="h-4 w-4 text-primary" />
-                  <span>14-21 January 2026</span>
+                  <span>14-22 January 2026</span>
                 </div>
                 <div className="flex items-center gap-2 px-4 py-2 bg-card rounded-full border">
                   <MapPin className="h-4 w-4 text-secondary" />
