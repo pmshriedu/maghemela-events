@@ -7,6 +7,12 @@ import Link from "next/link";
 
 const reels = [
   {
+    src: "/assets/shorts-video/maghe-mela-jan10-reel.mp4",
+    title: "Maghe Mela Highlights",
+    description:
+      "Experience the vibrant celebrations and cultural essence of Maghe Mela",
+  },
+  {
     src: "/assets/shorts-video/reel3.mp4",
     title: "Homestay Experience",
     description: "Traditional homestays offering genuine local hospitality",
@@ -175,11 +181,11 @@ export function Reels() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">
-            Adventure Shorts
+            Mela Shorts & Adventures
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-balance leading-relaxed">
-            Experience thrilling adventures and outdoor activities at Maghey
-            Sankranti Mela
+            Experience Mela Shorts featuring Maghe Mela celebrations and
+            thrilling adventures at Maghey Sankranti Mela
           </p>
         </motion.div>
 
@@ -253,18 +259,20 @@ export function Reels() {
           <div className="space-y-6">
             <div>
               <h3 className="text-3xl font-bold mb-4 text-amber-900">
-                Discover Adventure
+                Discover Mela Shorts & Adventures
               </h3>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Embark on thrilling adventures amidst the breathtaking
-                landscapes of Sikkim. From mountain treks to cultural
-                explorations, experience the perfect blend of adventure and
-                tradition at Maghey Sankranti Mela.
+                Experience Mela Shorts capturing the vibrant essence of Maghe
+                Mela alongside thrilling adventures amidst the breathtaking
+                landscapes of Sikkim. From cultural celebrations to mountain
+                treks, experience the perfect blend of tradition and adventure
+                at Maghey Sankranti Mela.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                 Join us for an unforgettable journey through scenic trails,
-                local villages, and traditional homestays that offer authentic
-                Sikkimese experiences.
+                local villages, traditional homestays, and the magical
+                celebrations of Maghe Mela that offer authentic Sikkimese
+                experiences.
               </p>
             </div>
 

@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, X, ZoomIn } from "lucide-react";
 
@@ -114,6 +115,35 @@ export function Gallery() {
               </motion.div>
             ))}
           </div>
+
+          {/* View Gallery Button */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mt-12"
+          >
+            <Link
+              href="/gallery"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-full font-semibold text-lg hover:bg-primary/90 transition-colors duration-300 shadow-lg hover:shadow-xl"
+            >
+              View Full Gallery
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </Link>
+          </motion.div>
         </div>
       </section>
 

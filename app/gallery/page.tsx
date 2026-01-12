@@ -99,6 +99,203 @@ export default function GalleryPage() {
       title: "Community Celebration 6",
       category: "Community",
     },
+    // Agricultural Haat Images
+    {
+      src: "/assets/agricultural-haatpic/DSC04658.webp",
+      title: "Agricultural Haat Event",
+      category: "Agriculture",
+    },
+    {
+      src: "/assets/agricultural-haatpic/DSC04660.webp",
+      title: "Agricultural Haat Event",
+      category: "Agriculture",
+    },
+    {
+      src: "/assets/agricultural-haatpic/DSC04663.webp",
+      title: "Agricultural Haat Event",
+      category: "Agriculture",
+    },
+    {
+      src: "/assets/agricultural-haatpic/DSC04665.webp",
+      title: "Agricultural Haat Event",
+      category: "Agriculture",
+    },
+    {
+      src: "/assets/agricultural-haatpic/DSC04666.webp",
+      title: "Agricultural Haat Event",
+      category: "Agriculture",
+    },
+    {
+      src: "/assets/agricultural-haatpic/DSC04667.webp",
+      title: "Agricultural Haat Event",
+      category: "Agriculture",
+    },
+    {
+      src: "/assets/agricultural-haatpic/DSC04669.webp",
+      title: "Agricultural Haat Event",
+      category: "Agriculture",
+    },
+    {
+      src: "/assets/agricultural-haatpic/DSC04671.webp",
+      title: "Agricultural Haat Event",
+      category: "Agriculture",
+    },
+    {
+      src: "/assets/agricultural-haatpic/DSC04672.webp",
+      title: "Agricultural Haat Event",
+      category: "Agriculture",
+    },
+    {
+      src: "/assets/agricultural-haatpic/DSC04673.webp",
+      title: "Agricultural Haat Event",
+      category: "Agriculture",
+    },
+    {
+      src: "/assets/agricultural-haatpic/DSC04675.webp",
+      title: "Agricultural Haat Event",
+      category: "Agriculture",
+    },
+    {
+      src: "/assets/agricultural-haatpic/IMG_20260111_110426.webp",
+      title: "Agricultural Haat Event",
+      category: "Agriculture",
+    },
+    {
+      src: "/assets/agricultural-haatpic/IMG_20260111_111559.webp",
+      title: "Agricultural Haat Event",
+      category: "Agriculture",
+    },
+    {
+      src: "/assets/agricultural-haatpic/IMG_20260111_112327.webp",
+      title: "Agricultural Haat Event",
+      category: "Agriculture",
+    },
+    {
+      src: "/assets/agricultural-haatpic/IMG_20260111_112410.webp",
+      title: "Agricultural Haat Event",
+      category: "Agriculture",
+    },
+    {
+      src: "/assets/agricultural-haatpic/IMG_20260111_112453.webp",
+      title: "Agricultural Haat Event",
+      category: "Agriculture",
+    },
+    {
+      src: "/assets/agricultural-haatpic/IMG_20260111_114348.webp",
+      title: "Agricultural Haat Event",
+      category: "Agriculture",
+    },
+    {
+      src: "/assets/agricultural-haatpic/IMG_20260111_114424.webp",
+      title: "Agricultural Haat Event",
+      category: "Agriculture",
+    },
+    {
+      src: "/assets/agricultural-haatpic/IMG_20260111_114526.webp",
+      title: "Agricultural Haat Event",
+      category: "Agriculture",
+    },
+    {
+      src: "/assets/agricultural-haatpic/IMG_20260111_114714.webp",
+      title: "Agricultural Haat Event",
+      category: "Agriculture",
+    },
+    // Cultural January 10 Images
+    {
+      src: "/assets/CulturalJan10/DSC04587.webp",
+      title: "Cultural Event January 10",
+      category: "Cultural",
+    },
+    {
+      src: "/assets/CulturalJan10/DSC04590.webp",
+      title: "Cultural Event January 10",
+      category: "Cultural",
+    },
+    {
+      src: "/assets/CulturalJan10/DSC04593.webp",
+      title: "Cultural Event January 10",
+      category: "Cultural",
+    },
+    {
+      src: "/assets/CulturalJan10/DSC04596.webp",
+      title: "Cultural Event January 10",
+      category: "Cultural",
+    },
+    {
+      src: "/assets/CulturalJan10/DSC04609.webp",
+      title: "Cultural Event January 10",
+      category: "Cultural",
+    },
+    {
+      src: "/assets/CulturalJan10/DSC04610.webp",
+      title: "Cultural Event January 10",
+      category: "Cultural",
+    },
+    {
+      src: "/assets/CulturalJan10/DSC04614.webp",
+      title: "Cultural Event January 10",
+      category: "Cultural",
+    },
+    {
+      src: "/assets/CulturalJan10/DSC04615.webp",
+      title: "Cultural Event January 10",
+      category: "Cultural",
+    },
+    {
+      src: "/assets/CulturalJan10/DSC04620.webp",
+      title: "Cultural Event January 10",
+      category: "Cultural",
+    },
+    {
+      src: "/assets/CulturalJan10/DSC04621.webp",
+      title: "Cultural Event January 10",
+      category: "Cultural",
+    },
+    {
+      src: "/assets/CulturalJan10/DSC04628.webp",
+      title: "Cultural Event January 10",
+      category: "Cultural",
+    },
+    {
+      src: "/assets/CulturalJan10/DSC04633.webp",
+      title: "Cultural Event January 10",
+      category: "Cultural",
+    },
+    {
+      src: "/assets/CulturalJan10/DSC04636.webp",
+      title: "Cultural Event January 10",
+      category: "Cultural",
+    },
+    {
+      src: "/assets/CulturalJan10/DSC04640.webp",
+      title: "Cultural Event January 10",
+      category: "Cultural",
+    },
+    {
+      src: "/assets/CulturalJan10/DSC04647.webp",
+      title: "Cultural Event January 10",
+      category: "Cultural",
+    },
+    {
+      src: "/assets/CulturalJan10/DSC04650.webp",
+      title: "Cultural Event January 10",
+      category: "Cultural",
+    },
+    {
+      src: "/assets/CulturalJan10/DSC04651.webp",
+      title: "Cultural Event January 10",
+      category: "Cultural",
+    },
+    {
+      src: "/assets/CulturalJan10/DSC04652.webp",
+      title: "Cultural Event January 10",
+      category: "Cultural",
+    },
+    {
+      src: "/assets/CulturalJan10/DSC04654.webp",
+      title: "Cultural Event January 10",
+      category: "Cultural",
+    },
   ];
 
   const categories = [
@@ -109,6 +306,7 @@ export default function GalleryPage() {
     "Sports",
     "Entertainment",
     "Education",
+    "Agriculture",
   ];
 
   const [selectedCategory, setSelectedCategory] = useState("All");
